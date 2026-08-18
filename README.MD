@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/math-game-header.png" alt="Math Game — математический тренажёр" width="100%">
+</p>
+
 # 🧮 Требования к функционалу игры «Математический тренажёр»
 
 ## 🗺 Roadmap
