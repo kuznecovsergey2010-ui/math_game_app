@@ -56,8 +56,7 @@ function startPlay(event) {
             const windowInput = document.querySelector("input")
             const correct_way = document.getElementById("correct")
 
-            // Показываем во всплывающем окне введённый ответ.
-            alert(windowInput.value)
+            
 
             // Если ответ неправильный, выводим сообщение об ошибке.
             if (windowInput.value != correct_way.innerText) {
