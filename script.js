@@ -73,6 +73,11 @@ function startPlay(event) {
                 textWinner.innerText = "Правильно!"
                 bodyElement.append(textWinner)
             }
+            document.getElementById("example").remove()
+            correct_way.remove()
+            windowInput.remove()
+            document.getElementById("submit").remove()
+
             startPlay(1) 
         }
         
