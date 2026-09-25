@@ -39,7 +39,7 @@ function startPlay(event) {
             // ----- Создаём кнопку отправки ответа -----
 
             const submitButton = document.createElement("button")
-            submitButton.type = "text"
+            submitButton.type = "button"
             submitButton.innerText = "Отправить"
             submitButton.onclick = checkAnswer
             bodyElement.append(submitButton)
