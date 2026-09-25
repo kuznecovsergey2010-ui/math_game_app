@@ -15,6 +15,7 @@ function startPlay(event) {
 
             const newElement = document.createElement("p")
             newElement.innerText = String(numbOne) + "+" + String(numbTwo) + "=?"
+            newElement.id = "example"
             bodyElement.append(newElement)
 
 
@@ -42,6 +43,7 @@ function startPlay(event) {
             submitButton.type = "button"
             submitButton.innerText = "Отправить"
             submitButton.onclick = checkAnswer
+            submitButton.id = "submit"
             bodyElement.append(submitButton)
         }
 
