@@ -56,14 +56,17 @@ function startPlay(event) {
             // Находим нужные элементы страницы.
             const bodyElement = document.querySelector("body")
             const windowInput = document.querySelector("input")
-            const correct_way = document.getElementById("correct")
-
+            const oldResult = document.getElementById("result")
+            if (oldResult) {
+                oldResult.remove()
+            }
             
 
             // Если ответ неправильный, выводим сообщение об ошибке.
             if (windowInput.value != correct_way.innerText) {
                 const textLoose = document.createElement("h1")
                 textLoose.innerText = "Неправильно!"
+                textLoose.id = "result"
                 bodyElement.append(textLoose)
             }
 
@@ -71,6 +74,7 @@ function startPlay(event) {
             if (windowInput.value === correct_way.innerText) {
                 const textWinner = document.createElement("h1")
                 textWinner.innerText = "Правильно!"
+                textWinner.id = "result"
                 bodyElement.append(textWinner)
             }
             document.getElementById("example").remove()
