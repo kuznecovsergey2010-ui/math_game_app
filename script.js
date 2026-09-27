@@ -56,6 +56,11 @@ function startPlay(event) {
             // Находим нужные элементы страницы.
             const bodyElement = document.querySelector("body")
             const windowInput = document.querySelector("input")
+            // Эту строчку нельзя удалять: здесь мы находим скрытый правильный ответ.
+            // Без неё переменной correct_way не будет, и ниже код упадёт с ошибкой
+            // "correct_way is not defined". В шаге 4 новые строчки нужно было
+            // добавить ПОСЛЕ неё, а не вместо неё.
+            const correct_way = document.getElementById("correct")
             const oldResult = document.getElementById("result")
             if (oldResult) {
                 oldResult.remove()
